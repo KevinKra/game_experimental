@@ -21,31 +21,32 @@ body {
 	@include flex-column;
 	@include font-styles;
 	align-items: center;
+	height: 100vh;
 	justify-content: center;
 	margin: 0;
 	padding: 0;
-	border: 1px solid red;
-	height: 100vh;
 }
 
 .main-section {
 	@include flex-column;
-	border: 1px solid red;
-	width: 30%;
+	border: 2px solid red;
 	min-width: 415px;
+	width: 30%;
 	h1 {
 		margin: 1rem auto;
-
 	}
 }
 
 .input-name {
  	@include flex-column;
- 	border: 1px solid red;
- 	width: 60%;
  	margin: 0 auto;
+ 	width: 60%;
+ 	label {
+ 		margin: 0 auto;
+ 	}
  	input {
  		margin: .5rem 0 1rem 0;
+ 		padding: 5px 5px;
  	}
 }
 
@@ -53,7 +54,6 @@ body {
 .race-selection {
 	@include flex-column;
 	text-align: center;
-	// border: 1px solid blue;
 	p {
 		margin: .5rem 0;
 	}
@@ -63,31 +63,29 @@ body {
 	@include flex-row;
 	justify-content: space-around;
 	div {
-		border: 1px solid red;
-		width: 32%;
 		height: 100%;
 		padding: 0;
+		width: 32%;
 	}
 	img {
 		background-color: #ddd;
 		height: 105px;
-		width: 100%;
-		padding: 0;
 		margin: 0;
+		padding: 0;
+		width: 100%;
 	}
 }
 
 .main-btns {
 	@include flex-column;
+	justify-content: space-between;
 	margin: 0 auto;
 	margin: 1rem 3px 0 3px;
-	justify-content: space-between;
-	border: 1px solid red;
 }
 
 .main-btn {
-	padding: 15px 0;
 	margin: 3px 0;
+	padding: 15px 0;
 }
 
 .race-type-btn {

@@ -9,19 +9,18 @@ body {
   flex-direction: column;
   font-size: 18px;
   align-items: center;
+  height: 100vh;
   justify-content: center;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
-  height: 100vh;
 }
 
 .main-section {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  width: 30%;
+  border: 2px solid red;
   min-width: 415px;
+  width: 30%;
 }
 .main-section h1 {
   margin: 1rem auto;
@@ -30,12 +29,15 @@ body {
 .input-name {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  margin: 0 auto;
   width: 60%;
+}
+.input-name label {
   margin: 0 auto;
 }
 .input-name input {
   margin: .5rem 0 1rem 0;
+  padding: 5px 5px;
 }
 
 .race-selection {
@@ -52,31 +54,29 @@ body {
   justify-content: space-around;
 }
 .choose-race div {
-  border: 1px solid red;
-  width: 32%;
   height: 100%;
   padding: 0;
+  width: 32%;
 }
 .choose-race img {
   background-color: #ddd;
   height: 105px;
-  width: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .main-btns {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
   margin: 1rem 3px 0 3px;
-  justify-content: space-between;
-  border: 1px solid red;
 }
 
 .main-btn {
-  padding: 15px 0;
   margin: 3px 0;
+  padding: 15px 0;
 }
 
 .race-type-btn {
