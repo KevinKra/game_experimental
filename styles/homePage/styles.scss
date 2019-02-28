@@ -1,3 +1,9 @@
+$backgroundColor: #efcea5;
+$supportColor: #efece8;
+$borderColor: #827b72;
+$fontColor: #33312f;
+
+
 @mixin flex-column {
 	display: flex;
 	flex-direction: column;
@@ -8,7 +14,9 @@
 }
 
 @mixin font-styles {
-	font-size: 18px;
+	font-size: 10px;
+	font-family: 'Press Start 2P', cursive;
+	color: $fontColor;
 }
 
 *:before,
@@ -21,31 +29,54 @@ body {
 	@include flex-column;
 	@include font-styles;
 	align-items: center;
+	background-color: $backgroundColor;
+	height: 100vh;
 	justify-content: center;
 	margin: 0;
 	padding: 0;
-	border: 1px solid red;
-	height: 100vh;
+}
+
+.btn {
+	cursor: pointer;
+	border: 2px solid $borderColor;
+	transition: active .07s ease-in-out;
+	box-shadow: -2px 2px 0px $borderColor;
+	border-radius: 15px;
+	&:active {
+		transform: translateX(-2px);
+		box-shadow: 0px 1px 0px $borderColor;
+	}
+	&:focus {
+		outline: none;
+	}
 }
 
 .main-section {
 	@include flex-column;
-	border: 1px solid red;
-	width: 30%;
-	min-width: 415px;
+	background-color: $supportColor;
+	border-radius: 15px;
+	border: 2px solid $borderColor;
+	box-shadow: -5px 5px 0 $borderColor;
+	width: 415px;
+	padding: 8px;
 	h1 {
 		margin: 1rem auto;
-
 	}
 }
 
 .input-name {
  	@include flex-column;
- 	border: 1px solid red;
- 	width: 60%;
  	margin: 0 auto;
+ 	width: 60%;
+ 	label {
+ 		margin: 0 auto;
+ 	}
  	input {
  		margin: .5rem 0 1rem 0;
+ 		padding: 5px 5px;
+	 	&:focus {
+	 		outline: none;
+	 	}
  	}
 }
 
@@ -53,7 +84,6 @@ body {
 .race-selection {
 	@include flex-column;
 	text-align: center;
-	// border: 1px solid blue;
 	p {
 		margin: .5rem 0;
 	}
@@ -63,31 +93,31 @@ body {
 	@include flex-row;
 	justify-content: space-around;
 	div {
-		border: 1px solid red;
-		width: 32%;
 		height: 100%;
 		padding: 0;
+		width: 32%;
 	}
 	img {
 		background-color: #ddd;
+		border: 2px solid $borderColor;
+		border-radius: 2px;
+		box-shadow: -2px 2px 0 $borderColor;
 		height: 105px;
+		margin-bottom: .5rem;
 		width: 100%;
-		padding: 0;
-		margin: 0;
 	}
 }
 
 .main-btns {
 	@include flex-column;
+	justify-content: space-between;
 	margin: 0 auto;
 	margin: 1rem 3px 0 3px;
-	justify-content: space-between;
-	border: 1px solid red;
 }
 
 .main-btn {
-	padding: 15px 0;
 	margin: 3px 0;
+	padding: 15px 0;
 }
 
 .race-type-btn {
