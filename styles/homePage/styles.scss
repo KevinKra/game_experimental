@@ -7,6 +7,10 @@
 	display: flex;
 }
 
+@mixin font-styles {
+	font-size: 18px;
+}
+
 *:before,
 *:after,
 * {
@@ -15,6 +19,7 @@
 
 body {
 	@include flex-column;
+	@include font-styles;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
@@ -28,12 +33,30 @@ body {
 	border: 1px solid red;
 	width: 30%;
 	min-width: 415px;
+	h1 {
+		margin: 1rem auto;
+
+	}
 }
+
+.input-name {
+ 	@include flex-column;
+ 	border: 1px solid red;
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	input {
+ 		margin: .5rem 0 1rem 0;
+ 	}
+}
+
 
 .race-selection {
 	@include flex-column;
 	text-align: center;
 	// border: 1px solid blue;
+	p {
+		margin: .5rem 0;
+	}
 }
 
 .choose-race {
