@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   font-size: 10px;
   font-family: 'Press Start 2P', cursive;
+  color: #33312f;
   align-items: center;
   background-color: #efcea5;
   height: 100vh;
@@ -59,6 +60,9 @@ body {
   margin: .5rem 0 1rem 0;
   padding: 5px 5px;
 }
+.input-name input:focus {
+  outline: none;
+}
 
 .race-selection {
   display: flex;
@@ -80,9 +84,11 @@ body {
 }
 .choose-race img {
   background-color: #ddd;
+  border: 2px solid #827b72;
+  border-radius: 2px;
+  box-shadow: -2px 2px 0 #827b72;
   height: 105px;
-  margin: 0;
-  padding: 0;
+  margin-bottom: .5rem;
   width: 100%;
 }
 

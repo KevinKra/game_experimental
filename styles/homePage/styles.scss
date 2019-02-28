@@ -1,6 +1,7 @@
 $backgroundColor: #efcea5;
 $supportColor: #efece8;
 $borderColor: #827b72;
+$fontColor: #33312f;
 
 
 @mixin flex-column {
@@ -15,6 +16,7 @@ $borderColor: #827b72;
 @mixin font-styles {
 	font-size: 10px;
 	font-family: 'Press Start 2P', cursive;
+	color: $fontColor;
 }
 
 *:before,
@@ -72,6 +74,9 @@ body {
  	input {
  		margin: .5rem 0 1rem 0;
  		padding: 5px 5px;
+	 	&:focus {
+	 		outline: none;
+	 	}
  	}
 }
 
@@ -94,9 +99,11 @@ body {
 	}
 	img {
 		background-color: #ddd;
+		border: 2px solid $borderColor;
+		border-radius: 2px;
+		box-shadow: -2px 2px 0 $borderColor;
 		height: 105px;
-		margin: 0;
-		padding: 0;
+		margin-bottom: .5rem;
 		width: 100%;
 	}
 }
