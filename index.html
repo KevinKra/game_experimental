@@ -4,15 +4,38 @@
 	<meta charset="UTF-8">
 	<title>My Game</title>
 </head>
+<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 <link rel="stylesheet" type="text/css" href="styles/homePage/styles.css">
 <body>
-	<section id="main-section">
+	<section class="main-section">
 		<h1>GAME TITLE</h1>
-		<form>
-			<label for=name-input>Hero's name:</label>
-			<input type="text" name="name-input">
-			<button type="submit" id="">Customize Character</button>
-			<button>About the Game</button>
+		<form class="primary-form">
+			<div class="input-name">
+				<label for=name-input>Hero's name:</label>
+				<input type="text" name="name-input">
+			</div>
+			<section class="race-selection">
+				<p>Choose your Race</p>
+				<section class="choose-race">
+					<div>
+						<img src="">
+						<button class="race-type-btn btn" type="submit">Human</button>
+					</div>
+					<div>
+						<img src="">
+						<button class="race-type-btn btn" type="submit">Dwarf</button>
+					</div>
+					<div>
+						<img src="">
+						<button class="race-type-btn btn" type="submit">SnobGoblin</button>
+					</div>
+				</section>
+			</section>
+			<section class="main-btns">
+				<button class="main-btn btn" type="submit" id="">Customize Character</button>
+				<button class="main-btn btn" type=submit" id="">Reset</button>
+				<button class="main-btn btn" >About the Game</button>
+			</section>
 		</form>
 	</section>
 </body>

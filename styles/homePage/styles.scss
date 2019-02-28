@@ -1,0 +1,96 @@
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flex-row {
+	display: flex;
+}
+
+@mixin font-styles {
+	font-size: 18px;
+}
+
+*:before,
+*:after,
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include flex-column;
+	@include font-styles;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	border: 1px solid red;
+	height: 100vh;
+}
+
+.main-section {
+	@include flex-column;
+	border: 1px solid red;
+	width: 30%;
+	min-width: 415px;
+	h1 {
+		margin: 1rem auto;
+
+	}
+}
+
+.input-name {
+ 	@include flex-column;
+ 	border: 1px solid red;
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	input {
+ 		margin: .5rem 0 1rem 0;
+ 	}
+}
+
+
+.race-selection {
+	@include flex-column;
+	text-align: center;
+	// border: 1px solid blue;
+	p {
+		margin: .5rem 0;
+	}
+}
+
+.choose-race {
+	@include flex-row;
+	justify-content: space-around;
+	div {
+		border: 1px solid red;
+		width: 32%;
+		height: 100%;
+		padding: 0;
+	}
+	img {
+		background-color: #ddd;
+		height: 105px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.main-btns {
+	@include flex-column;
+	margin: 0 auto;
+	margin: 1rem 3px 0 3px;
+	justify-content: space-between;
+	border: 1px solid red;
+}
+
+.main-btn {
+	padding: 15px 0;
+	margin: 3px 0;
+}
+
+.race-type-btn {
+	padding: 12px 0;
+	width: 100%;
+}
