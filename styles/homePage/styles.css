@@ -1,2 +1,69 @@
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 30%;
+  min-width: 415px;
+}
+
+.race-selection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.choose-race {
+  display: flex;
+  justify-content: space-around;
+}
+.choose-race div {
+  border: 1px solid red;
+  width: 32%;
+  height: 100%;
+  padding: 0;
+}
+.choose-race img {
+  background-color: #ddd;
+  height: 105px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-btns {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin: 1rem 3px 0 3px;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.main-btn {
+  padding: 15px 0;
+  margin: 3px 0;
+}
+
+.race-type-btn {
+  padding: 12px 0;
+  width: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */
